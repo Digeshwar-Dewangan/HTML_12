@@ -11,13 +11,13 @@ div.tile{
 	border: 1px solid green;
 }
 
-#hero.jpg{
+#hero.img {
 	width: 800px;
 	border: 1px solid blue;
 }
 
 *{
-	border: 1px solid black;
+	border: 1px solid white;
 }
 
 body{

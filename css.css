@@ -1,6 +1,7 @@
 body {
 	border:1px solid blue;
 	font-family: 'Montagu Slab', serif;
+	margin: 0;
 }
 
 img {
@@ -9,6 +10,22 @@ img {
 
 div.tile{
 	border: 1px solid green;
+	width: 300px;
+	padding: 1em;
+}
+
+.tile > img {
+	width: 300px;
+	height: 300px;
+	object-fit:  cover;
+}
+
+.tilewrapper {
+	border: 2px solid green;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 #hero {
@@ -33,4 +50,15 @@ h1 {
 
 .navbar > a:hover{
 	color: Red;
+}
+
+
+
+form {
+	border: 5px solid white;
+	padding: 1em;
+}
+
+input {
+	margin: 0.5em;
 }

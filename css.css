@@ -16,16 +16,14 @@ div.tile{
 	border: 1px solid blue;
 }
 
-*{
-	border: 1px solid white;
-}
 
 body{
-	background-color: lightblue;
+	background-color: rgba(50, 125, 168, 0.3);
 }
 
 h1 {
 	color : #32a852;
+	text-align: center;
 }
 
 .navbar > a {
@@ -34,5 +32,5 @@ h1 {
 }
 
 .navbar > a:hover{
-	color: red;
+	color: Red;
 }

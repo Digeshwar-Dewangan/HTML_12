@@ -10,15 +10,17 @@ img {
 
 div.tile{
 	border: 1px solid green;
-	width: 300px;
 	padding: 1em;
+	box-sizing: border-box;
+	border: 2px solid orange;
 }
 
 .tile > img {
-	width: 300px;
+	width: 100%;
 	height: 300px;
 	object-fit:  cover;
-	opacity: 0.2;
+	opacity: 0.8;
+	border: 2px solid green;
 }
 .tile > img:hover {
 	opacity: 1;
@@ -33,22 +35,22 @@ div.tile{
 }
 
 #hero {
-	width: 800px;
+	width: 100%;
 	border: 1px solid blue;
 }
 
 
 body{
-	background-color: rgba(50, 125, 168, 0.3);
+	background-color: rgba(50, 125, 168, 0.5);
 }
 
 h1 {
 	color : white;
-	width: 50%;
+	width: 75%;
 }
 
 .nav-links {
-	width: 50%;
+	width: 25%;
 	display: flex;
 	justify-content: space-between;
 }
@@ -70,7 +72,7 @@ h1 {
 }
 
 .navbar > a:hover{
-	color: Red;
+	color: red;
 }
 
 
@@ -78,9 +80,27 @@ h1 {
 form {
 	border: 5px solid white;
 	padding: 1em;
-	background-color: white;
+	background-color: lightyellow;
 }
 
 input {
 	margin: 0.5em;
+}
+
+@media screen and (max-width: 768px){
+	.tile{
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px){
+	.tile{
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 1201px){
+	.tile{
+		width: 25%;
+	}
 }

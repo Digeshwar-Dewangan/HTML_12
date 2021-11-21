@@ -3,7 +3,6 @@ body{
 }
 .box {
 	border: 1px solid blue;
-	width: 300px;
 	padding: 1em;
 	box-sizing: border-box;
 }
@@ -18,5 +17,23 @@ body{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: flex center;
+	justify-content: space-around;
+}
+
+@media screen and (max-width: 768px){
+	.box{
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px){
+	.box{
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 1201px){
+	.box{
+		width: 25%;
+	}
 }
